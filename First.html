@@ -1,0 +1,116 @@
+# upcoming
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>wino</title>
+        <meta http-equiv="" charset="UTF-8">
+        <link rel="stylesheet" href="styles/style.css">
+        </head>
+    <style>
+        
+body{
+background-image:url("temp_photo.jpg");
+-webkit-animation-name: example; 
+    -webkit-animation-duration:20s;
+    -webkit-animation-iteration-count: infinite ;
+-webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes example {
+   0%  {background-image: url("temp_photo.jpg");}
+    25% {background-image: url("wallpaper.webp");}
+50%  {background-image: url("wolf.png");}
+    75% {background-image: url("Hephzibah.png");}
+100%  {background-image: url("wallpaper.webp");}
+    
+}
+
+    </style>
+    
+<body>
+       <script src="scripts/script.js"></script> 
+    
+        <ul>
+ 
+        <h1 class="h1"><img src="temp_photo.jpg" style="height:50px;width:50px;border:10px;padding:5px 5px; center:100%;opacity:0.5;">
+            Weeno
+        </h1>
+      </ul>
+        
+        <button onclick="clickFunction()" class="button">Menu
+             <div class="div" onclick="myFunction(this)" >
+                 <div class="bar1"></div>
+                 <div class="bar2"></div>
+                 <div class="bar3"></div>
+             </div>
+                </button>
+            <div id="myDropdown" class="dropdown-content"> 
+                
+                <input type="text" placeholder="Search.." id="myInput"onkeyup="filterFunction()"> 
+                
+                <a href="#about">About</a> 
+                
+                <a href="#base">Base</a> 
+                
+                <a href="#blog">Blog</a> 
+                
+                <a href="#contact">Contact</a> 
+                
+                <a href="#custom">Custom</a> 
+                
+                <a href="#support">Support</a> 
+                
+                <a href="#tools">Tools</a> 
+                
+            </div> 
+        </div> 
+         <h1 class="T1">Login
+            
+        </h1>
+        <div class="login">
+            <form  action="" >
+            <input  type="text" placeholder="username"  id="numb" class="input" min="3" required name="uname" >
+            <input  type="password" placeholder="password"   class="input"  required name="psw">
+         
+                <a href="subscribe.html"><button type="submit"   class="blink" onclick="loadFunction(this)">login
+                    </button></a></form>
+            <h4 style="color:white;margin-left:10px;">
+                forgot password?<a href="#here">click here</a>
+            </h4>
+                
+            </div>
+    <h4 style="color:orange;">
+        Don't have an account?😢<a href="" class="T1">register</a>
+    </h4>
+<div class="Ad">Free Advertisement board
+   <div>
+    <marquee class="body"><button onclick="blinkFunction(this)" class="pblink"><a shape="square" ping="">place your Adverts now
+        
+        </a></button></marquee>
+    </div>
+    </div>
+    
+                
+ <script>
+     function myFunction(x) { 
+x.classList.toggle("change"); 
+} 
+function clickFunction() { document.getElementById("myDropdown") .classList.toggle("show"); } function filterFunction() { 
+var input, filter, ul, li, a, i; input = document.getElementById ("myInput"); 
+filter = input.value.toUpperCase(); 
+div = document.getElementById ("myDropdown"); 
+a = div.getElementsByTagName("a"); 
+for (i = 0; i < a.length; i++) { 
+if (a[i].innerHTML.toUpperCase() .indexOf(filter) > -1) { a[i].style.display = ""; } else { a[i].style.display="none"; } } }
+function blinkFunction(y){
+y.classList.toggle("change");
+}
+function loadFunction(y){
+y.classList.toggle("loader");
+}
+ </script>
+    
+        
+    </body>
+</html>
